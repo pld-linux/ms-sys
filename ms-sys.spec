@@ -1,7 +1,7 @@
 Summary:	Create DOS/MS-compatible boot records
 Summary(pl):	Narzêdzie tworz±ce boot recordy kompatybilne z DOS-em i MS
 Name:		ms-sys
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	GPL
 Group:		Applications/System
@@ -25,7 +25,7 @@ FAT32 - z dok³adno¶ci± do tego, ¿e nie kopiuje ¿adnych plików
 systemowych, jedynie zapisuje boot record.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 # "debug" is only a hack - it allows passing EXTRA_CFLAGS
@@ -38,10 +38,11 @@ systemowych, jedynie zapisuje boot record.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 %{__make} install \
-	PREFIX=$RPM_BUILD_ROOT%{_prefix}
+	PREFIX=$RPM_BUILD_ROOT%{_prefix} \
+	MANDIR=$RPM_BUILD_ROOT%{_mandir}
 
 mv -f $RPM_BUILD_ROOT%{_datadir}/locale/{sv_SE,sv}
 
@@ -54,3 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README TODO
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*

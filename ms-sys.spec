@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/ms-sys/%{name}-%{version}.tgz
+# Source0-md5:	d98d06a85f3c4821fdda8f62cae4559d
 URL:		http://ms-sys.sourceforge.net/
 BuildRequires:	bash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

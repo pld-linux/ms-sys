@@ -5,7 +5,7 @@ Version:	1.0.2
 Release:	1
 License:	GPL
 Group:		Applications/System
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/ms-sys/%{name}-%{version}.tgz
+Source0:	http://dl.sourceforge.net/ms-sys/%{name}-%{version}.tgz
 URL:		http://ms-sys.sourceforge.net/
 BuildRequires:	bash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

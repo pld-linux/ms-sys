@@ -2,7 +2,7 @@ Summary:	Create DOS/MS-compatible boot records
 Summary(pl):	Narzêdzie tworz±ce boot recordy kompatybilne z DOS-em i MS
 Name:		ms-sys
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/ms-sys/%{name}-%{version}.tgz
@@ -33,7 +33,7 @@ systemowych, jedynie zapisuje boot record.
 	SHELL=/bin/bash \
 	PREFIX=%{_prefix} \
 	CC="%{__cc}" \
-	EXTRA_CFLAGS="%{rpmcflags}" \
+	EXTRA_CFLAGS="%{rpmcflags} -fasm" \
 	EXTRA_LDFLAGS="%{rpmldflags}"
 
 %install

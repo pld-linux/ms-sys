@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/ms-sys/%{name}-%{version}.tgz
 # Source0-md5:	85ea2c3c1053dc65db614de22cd280b1
 URL:		http://ms-sys.sourceforge.net/
 BuildRequires:	bash
-BuildRequires:  gettext-devel
+BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

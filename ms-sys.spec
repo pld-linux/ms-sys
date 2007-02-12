@@ -1,5 +1,5 @@
 Summary:	Create DOS/MS-compatible boot records
-Summary(pl):	Narzêdzie tworz±ce boot recordy kompatybilne z DOS-em i MS
+Summary(pl.UTF-8):   NarzÄ™dzie tworzÄ…ce boot recordy kompatybilne z DOS-em i MS
 Name:		ms-sys
 Version:	2.1.2
 Release:	1
@@ -19,11 +19,11 @@ also able to do the same as DOS "sys" to a floppy or FAT32 partition
 except that it does not copy any system files, only the boot record is
 written.
 
-%description -l pl
-Ten program s³u¿y do tworzenia boot recordów kompatybilnych z DOS-em i
-MS. Jest w stanie zrobiæ to samo co microsoftowy "fdisk /mbr" na
-twardym dysku, a tak¿e to, co DOS-owy "sys" na dyskietce lub partycji
-FAT32 - z dok³adno¶ci± do tego, ¿e nie kopiuje ¿adnych plików
+%description -l pl.UTF-8
+Ten program sÅ‚uÅ¼y do tworzenia boot recordÃ³w kompatybilnych z DOS-em i
+MS. Jest w stanie zrobiÄ‡ to samo co microsoftowy "fdisk /mbr" na
+twardym dysku, a takÅ¼e to, co DOS-owy "sys" na dyskietce lub partycji
+FAT32 - z dokÅ‚adnoÅ›ciÄ… do tego, Å¼e nie kopiuje Å¼adnych plikÃ³w
 systemowych, jedynie zapisuje boot record.
 
 %prep

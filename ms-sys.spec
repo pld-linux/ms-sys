@@ -1,5 +1,5 @@
 Summary:	Create DOS/MS-compatible boot records
-Summary(pl.UTF-8):   Narzędzie tworzące boot recordy kompatybilne z DOS-em i MS
+Summary(pl.UTF-8):	Narzędzie tworzące boot recordy kompatybilne z DOS-em i MS
 Name:		ms-sys
 Version:	2.1.2
 Release:	1

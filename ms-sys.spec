@@ -1,12 +1,12 @@
 Summary:	Create DOS/MS-compatible boot records
 Summary(pl.UTF-8):	Narzędzie tworzące boot recordy kompatybilne z DOS-em i MS
 Name:		ms-sys
-Version:	2.1.3
-Release:	2
+Version:	2.2.1
+Release:	1
 License:	GPL
 Group:		Applications/System
-Source0:	http://dl.sourceforge.net/ms-sys/%{name}-%{version}.tgz
-# Source0-md5:	6fad0a69ac89440ad4f696dbbbf11497
+Source0:	http://downloads.sourceforge.net/ms-sys/%{name}-%{version}.tar.gz
+# Source0-md5:	659fb46f1b014abe64ae7d635c5bc1f8
 URL:		http://ms-sys.sourceforge.net/
 BuildRequires:	bash
 BuildRequires:	gettext-devel

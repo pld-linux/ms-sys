@@ -2,7 +2,7 @@ Summary:	Create DOS/MS-compatible boot records
 Summary(pl.UTF-8):	Narzędzie tworzące rekordy rozruchowe kompatybilne z DOS-em i MS
 Name:		ms-sys
 Version:	2.5.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://downloads.sourceforge.net/ms-sys/%{name}-%{version}.tar.gz
@@ -46,6 +46,9 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 	DESTDIR=$RPM_BUILD_ROOT \
 	PREFIX=%{_prefix} \
 	MANDIR=%{_mandir}
+
+# UTF-8 version is enough
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/de@latin
 
 %find_lang %{name}
 
